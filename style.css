@@ -36,7 +36,7 @@
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
-	transition: 0.5s;
+	transition: 0.3s;
 	transform: translateY(100px);
 	border-radius: 20px;
 }
@@ -44,7 +44,8 @@
 .slider .slides:hover .content {
 	visibility: visible;
 	opacity: 1;
-	transition: 0.5s ease-in;
+	transition: 0.5s ease;
+	transition-delay: 0.5s;
 	transform: translateY(0);
 }
 
