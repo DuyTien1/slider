@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.slider {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	border: 2px solid #000;
+}
+
+.slider .slides {
+	position: relative;
+	height: 100%;
+	flex: 1;
+	overflow: hidden;
+	background: #ccc;
+	border-right: 2px solid #000;
+	transition: 0.5s ease-in;
+}
+
+.slider .slides:hover {
+	flex-grow: 7;
+}
+
+.slider .slides .content {
+	position: absolute;
+	bottom: 0;
+	margin: 30px;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(100px);
+	border-radius: 20px;
+}
+
+.slider .slides:hover .content {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s ease-in;
+	transform: translateY(0);
+}
+
+.slider .slides:nth-child(1) {
+	background-image: url("kevin.jpg");
+	object-fit: cover;
+	background-position: 43% 76%;
+}
+
+.slider .slides:nth-child(1):hover {
+	background-position: 40% 72%;
+}
+
+.slider .slides:nth-child(2) {
+	background-image: url("elysia.jpg");
+	object-fit: cover;
+	background-position: 52% 33%;
+}
+
+.slider .slides:nth-child(2):hover {
+	background-position: center 20%;
+}
+
+.slider .slides:nth-child(3) {
+	background-image: url("aponia.jfif");
+	object-fit: cover;
+	background-position: center 20%;
+}
+
+.slider .slides:nth-child(3):hover {
+	background-position: 60% 10%;
+}
+
+.slider .slides:nth-child(4) {
+	background-image: url("eden.png");
+	object-fit: cover;
+	background-position: 33% center;
+}
+
+.slider .slides:nth-child(4):hover {
+	background-position: 20% 25%;
+}
+
+.slider .slides:nth-child(5) {
+	background-image: url("vill-v.jpg");
+	object-fit: cover;
+	background-position: 26% 33%;
+}
+
+.slider .slides:nth-child(5):hover {
+	background-position: 20% 30%;
+}
+
+.slider .slides:nth-child(6) {
+	background-image: url("kalpas.jfif");
+	object-fit: cover;
+	background-position: 25% 32%;
+}
+
+.slider .slides:nth-child(6):hover {
+	background-position: 5% 30%;
+}
+
+.slider .slides:nth-child(7) {
+	background-image: url("su.jpg");
+	object-fit: cover;
+	background-position: 32% 48%;
+}
+
+.slider .slides:nth-child(7):hover {
+	background-position: 25% 50%;
+}
+
+.slider .slides:nth-child(8) {
+	background-image: url("sakura.png");
+	object-fit: cover;
+	background-position: 78% 28%;
+}
+
+.slider .slides:nth-child(8):hover {
+	background-position: 85% 30%;
+}
+
+.slider .slides:nth-child(9) {
+	background-image: url("kosma.png");
+	object-fit: cover;
+	background-position: 48% top;
+}
+
+.slider .slides:nth-child(9):hover {
+	background-position: 47% center;
+}
+
+.slider .slides:nth-child(10) {
+	background-image: url("mobius.jpg");
+	object-fit: cover;
+	background-position: 60% 10%;
+}
+
+.slider .slides:nth-child(10):hover {
+	background-position: 47% 20%;
+}
+
+.slider .slides:nth-child(11) {
+	background-image: url("griseo.jpg");
+	object-fit: cover;
+	background-position: 48% top;
+}
+
+.slider .slides:nth-child(11):hover {
+	background-position: 47% 20%;
+}
+
+.slider .slides:nth-child(12) {
+	background-image: url("hua.jpg");
+	object-fit: cover;
+	background-position: 58% 10%;
+}
+
+.slider .slides:nth-child(12):hover {
+	background-position: 63% 20%;
+}
+
+.slider .slides:nth-child(13) {
+	background-image: url("pardofelis.jpg");
+	object-fit: cover;
+	background-position: 65% 10%;
+}
+
+.slider .slides:nth-child(13):hover {
+	background-position: 63% 20%;
+}
